@@ -18,15 +18,6 @@
  */
 import { JhiBooleanComponent } from './component/jhi-boolean.component';
 import { JhiItemCountComponent } from './component/jhi-item-count.component';
-import { JhiJvmMemoryComponent } from './component/metrics/jhi-jvm-memory.component';
-import { JhiJvmThreadsComponent } from './component/metrics/jhi-jvm-threads.component';
-import { JhiMetricsCacheComponent } from './component/metrics/jhi-metrics-cache.component';
-import { JhiMetricsDatasourceComponent } from './component/metrics/jhi-metrics-datasource.component';
-import { JhiMetricsEndpointsRequestsComponent } from './component/metrics/jhi-metrics-endpoints-requests';
-import { JhiMetricsGarbageCollectorComponent } from './component/metrics/jhi-metrics-garbagecollector.component';
-import { JhiThreadModalComponent } from './component/metrics/jhi-metrics-modal-threads.component';
-import { JhiMetricsHttpRequestComponent } from './component/metrics/jhi-metrics-request.component';
-import { JhiMetricsSystemComponent } from './component/metrics/jhi-metrics-system.component';
 import { JhiMaxValidatorDirective } from './directive/max.directive';
 import { JhiMaxbytesValidatorDirective } from './directive/maxbytes.directive';
 import { JhiMinValidatorDirective } from './directive/min.directive';
@@ -63,13 +54,4 @@ export const JHI_DIRECTIVES = [
 export const JHI_COMPONENTS = [
     JhiItemCountComponent,
     JhiBooleanComponent,
-    JhiJvmMemoryComponent,
-    JhiJvmThreadsComponent,
-    JhiMetricsHttpRequestComponent,
-    JhiMetricsEndpointsRequestsComponent,
-    JhiMetricsCacheComponent,
-    JhiMetricsDatasourceComponent,
-    JhiMetricsSystemComponent,
-    JhiMetricsGarbageCollectorComponent,
-    JhiThreadModalComponent
 ];

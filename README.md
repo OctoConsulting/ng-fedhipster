@@ -1,3 +1,5 @@
+USWDS VERSIO
+
 [![Logo][jhipster-image]][jhipster-url]
 
 Greetings, Java Hipster!

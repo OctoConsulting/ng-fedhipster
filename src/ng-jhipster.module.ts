@@ -20,10 +20,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { ModuleWithProviders, NgModule, Sanitizer } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MissingTranslationHandler, TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { JhiThreadModalComponent } from './component/metrics/jhi-metrics-modal-threads.component';
 import { JhiModuleConfig } from './config';
 import { JhiConfigService } from './config.service';
 import { JHI_COMPONENTS, JHI_DIRECTIVES, JHI_PIPES } from './jhi-components';
@@ -58,11 +56,9 @@ export function missingTranslationHandler(configService: JhiConfigService) {
             }
         }),
         CommonModule,
-        NgbModule.forRoot(),
         FormsModule
     ],
     declarations: [...JHI_PIPES, ...JHI_DIRECTIVES, ...JHI_COMPONENTS, JhiTranslateDirective],
-    entryComponents: [JhiThreadModalComponent],
     exports: [...JHI_PIPES, ...JHI_DIRECTIVES, ...JHI_COMPONENTS, JhiTranslateDirective, TranslateModule, CommonModule]
 })
 export class NgJhipsterModule {
